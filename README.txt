@@ -1,15 +1,25 @@
-Install : 
 Download and install node.js
 	http://nodejs.org/download/
-Install Express (root)
-	npm -g install express
+
 Install coffee-script (root)
 	npm -g install coffee-script
-Install js2coffee (root)
-	npm -g install js2coffee
+
+Checkout project
+	git clone git://github.com/jbpin/planbox.git
+
 Initialize project
-	express planbox && cd planbox
 	npm install
-Translate js to coffee
-	js2coffee app.js > app.coffee
-	
+
+Put db details in ./models/phonebook.coffee
+
+Compile coffee to js (not necessary)
+	cd coffee
+	coffee -c -j ../public/js/planbox.js planbox.coffee backbone/model/* backbone/collection/* backbone/view/*
+
+Running the projet
+	coffee app.coffee
+
+Access to the application
+	http://localhost:3000
+
+
