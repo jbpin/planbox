@@ -1,0 +1,28 @@
+extends layout
+
+
+block content
+	h1= title
+	div#list.span8.well
+		div#action
+			//div#btn_add.btn.btn-info(data-toggle="collapse", data-target="#add") Ajouter un contact
+			h3(data-toggle="collapse", data-target="#add", style="cursor:pointer") Ajouter un contact
+			div#add.collapse
+				div#error.alert.alert-error
+					button.close(data-dismiss="alert") x
+					strong Error
+					|  Vous devez précisez un nom et un prénom
+				form#add
+					fieldset
+						div.control-group
+							label.control-label(for="inputFirstname") Prénom
+							div.controls
+								input.input-large(type="text",id="inputFirstname")
+						div.control-group
+							label.control-label(for="inputLastname") Nom
+							div.controls
+								input.input-large(type="text",id="inputLastname")
+					div.form-actions
+						div#save.btn.btn-success Enregistrer
+						div.btn.pull-right(data-toggle="collapse", data-target="#add") Annuler
+		div#contacts

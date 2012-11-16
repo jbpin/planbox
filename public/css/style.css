@@ -1,0 +1,63 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#contacts{
+	margin-left: -18px;
+	margin-right: -19px;
+}
+
+#contact-list .contact-item{
+	list-style: none;
+	width:100%;
+	border-top:1px solid #ececec;
+}
+
+#contact-list a.contact{
+	height:40px;
+	color: #333;
+	font-size: 22px;
+	line-height: 35px;
+	padding-left: 30px;
+	display:block;
+	text-decoration:none;
+}
+
+#contact-list a.contact:hover{
+	background:#eee;
+}
+
+.delete-contact{
+	margin-top: 12px;
+	margin-right: 10px;
+	cursor:pointer;
+}
+
+.contact-item p {
+	font-size:18px;
+	padding:10px;
+	margin-left:40px;
+}
+
+.contact-item p strong{
+	padding-right:50px;
+}
+
+.phone{
+	background:#fff;
+}
+
+#addphone{
+	text-align:center;
+	margin:10px;
+	
+}
+
+#addphone select, #addphone input, .btn{
+	margin-right:5px;
+}

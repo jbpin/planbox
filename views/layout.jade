@@ -1,0 +1,25 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/style.css')
+		
+		
+	body
+		div.container
+			block content
+
+		
+
+		//main script import
+		script(src='/js/jquery.min.js')
+		script(src='/js/bootstrap.min.js')
+		script(src='/js/underscore-min.js')
+		script(src='/js/backbone-min.js')
+		script(src='/js/jade.min.js')
+		script(src='/js/socket.io.min.js')
+
+		// app script import
+		script(type="text/javascript", src='/js/planbox.js')	
+		
