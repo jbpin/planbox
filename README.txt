@@ -16,7 +16,7 @@ Compile coffee to js (not necessary)
 	cd coffee
 	coffee -c -j ../public/js/planbox.js planbox.coffee backbone/model/* backbone/collection/* backbone/view/*
 
-Running the projet
+Running the projet (that will create the database table)
 	coffee app.coffee
 
 Access to the application
